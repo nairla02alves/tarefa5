@@ -1,0 +1,271 @@
+:root {
+    --cor-barras: #189cd9;
+    --cor-principal: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container.cima {
+    max-width: 1140px;
+    margin: 0px;
+}
+
+.line {
+    background-color: blue(--cor-barras);
+    width: 100%;
+    height: 15px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+}
+
+.nome-empresa {
+    padding-top: 50px;
+    margin: 35px 25px 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--cor-principal);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-menu {
+    display: none;
+}
+
+.menu1 {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    font-size: 17px;
+    color: #ffffff;
+    padding: 15px 19px;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu li:hover>a {
+    background-color: var(--cor-principal);
+    color: #ffffff;
+}
+
+.submenu {
+    margin-left: -40px;
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover>.submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu a {
+    font-size: 16px;
+    padding: 10px;
+    color: #FFF;
+    background-color: var(--cor-principal);
+    align-content: end;
+}
+
+header {
+    background-color: #334de1;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txtex{
+    display: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.banner {
+    background-image: url('../imagens/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    line-height: 70px;
+    color: var(--cor-principal);
+}
+.textos {
+    background-color: #ffffff;
+}
+
+.barra {
+    width: 200px;
+    height: 15px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5505b1;
+    color: white;
+  }
+
+  ol {
+    background: #bd6cff;
+    padding: 20px;
+  }
+  ol li {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: 35px;
+  }
+
+footer {
+    background-color: #6032de;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .container {
+        margin: auto;
+        max-width: 1024px;
+    }
+
+    .container-banner {
+        margin-left: 30px;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+    }
+}
+
+@media (min-width:425px) and (max-width:767px) {
+    .container {
+        margin: auto;
+        max-width: 767px;
+    }
+
+    .container-banner {
+        margin-left: 10px;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+
+    }
+    .cabecalho-menu img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (min-width:320px) and (max-width:424px) {
+    .container {
+        margin: auto;
+        max-width: 425px;
+    }
+
+    .container-banner {
+        margin-left: 1px;
+    
+    }
+    .container-banner h1{
+        display: none;
+    
+    }
+    .txtex{
+        display: block;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+
+    }
+
+    .cabecalho-menu img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo img {
+        padding: 3px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .nome-empresa {
+        padding-top: 25px;
+        font-size: 15px;
+        margin: 20px 20px 40px;
+    }
+}
